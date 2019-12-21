@@ -21,7 +21,7 @@
   border-radius: 0px 0px 5px 5px;
   background-color: rgb(95, 136, 124);
   padding: 10px 0px;
-  width: 80vw;
+  width: 75vw;
   color: #FFF;
 }
 
@@ -93,4 +93,39 @@ label {
 #inventory-display th,
 #inventory-display td{
   padding: 10px 10px;
+}
+
+#content {
+  width: 100vw;
+  height: 100vh;
+}
+
+.fade-in {
+  animation: fade 2s ease-in;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #inventory-display input {
+    width: 50px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #inventory-display input {
+    width: 25px;
+  }
+
+  #inventory-display button {
+    padding: 1px 1px;
+    margin-right: 20px;
+  }
 }

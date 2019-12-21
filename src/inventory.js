@@ -42,13 +42,6 @@ function createRow(item) {
   btnContainer1.appendChild(save);
   data.push(btnContainer1);
 
-  let btnContainer2 = document.createElement('td');
-  let remove = document.createElement('button');
-  remove.innerHTML = 'Remove';
-  remove.setAttribute('class', 'removeButton');
-  btnContainer2.appendChild(remove);
-  data.push(btnContainer2);
-
   data.forEach((item) => {
     tr.appendChild(item);
   });
@@ -95,6 +88,8 @@ function createItem() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  let content = document.getElementsById('content');
+  content.setAttribute('class', 'fade-in');
   fetchProducts();
 });
 
