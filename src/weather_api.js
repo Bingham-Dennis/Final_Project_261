@@ -59,7 +59,7 @@ function getCity() {
 // getWeather openweathermap api call for local data.
 async function getWeather() {
   let widget = document.getElementById('weather');
-  let url = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=imperial&APPID=e678773f4207ae073e4238b073d11024`;
+  let url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=imperial&APPID=e678773f4207ae073e4238b073d11024`;
   let xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
