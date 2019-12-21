@@ -101,7 +101,13 @@ label {
 }
 
 .fade-in {
-  animation: fade 2s ease-in;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+.button-click {
+  animation-name: swing;
+  animation-duration: 3s;
 }
 
 @keyframes fade {
@@ -111,6 +117,34 @@ label {
   to {
     opacity: 100%;
   }
+}
+
+@keyframes swing
+{
+    15%
+    {
+        transform: translateX(5px);
+    }
+    30%
+    {
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        transform: translateX(3px);
+    }
+    65%
+    {
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        transform: translateX(2px);
+    }
+    100%
+    {
+        transform: translateX(0);
+    }
 }
 
 @media screen and (max-width: 900px) {

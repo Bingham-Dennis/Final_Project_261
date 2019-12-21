@@ -88,7 +88,7 @@ function createItem() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  let content = document.getElementsById('content');
+  let content = document.getElementById('content');
   content.setAttribute('class', 'fade-in');
   fetchProducts();
 });
@@ -100,6 +100,11 @@ submit.addEventListener('click', (e) => {
   let item = createItem();
   // store new item
   storeProduct(item);
+
+  submit.setAttribute('class', 'button-click');
+  setTimeout(() => {
+    submit.removeAttribute('class', 'button-click');
+  }, 3000);
 
   clearForm();
   focusOnFirstInput();
