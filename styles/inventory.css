@@ -102,7 +102,7 @@ label {
 
 .fade-in {
   animation-name: fade;
-  animation-duration: 2s;
+  animation-duration: 3s;
 }
 
 .button-click {
